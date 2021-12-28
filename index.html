@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+      <section id="header">
+        <h1 id="title">ແບບສຳຫຼວດ</h1>
+        <p id="description">
+          "ຂໍຂອບໃຈລ່ວງໜ້າ ທີ່ເຂົ້າມາຕອບແບບສຳຫຼວດຂອງພວກເຮົາໃນຄັ້ງນີ້"
+        </p>
+      </section>
+      <form id="survey-form">
+
+        <div class="form-groups">
+          <label id="name-label"><h3>ຊື່ ແລະ ນາມສະກຸນ</h3></label>
+          <input type="text" id="name" name="name" required placeholder="ກະລຸນາປ້ອນຊື່ ແລະ ນາມສະກຸນ">
+        </div>
+        <div class="form-groups">
+          <label id="email-label"><h3>ອີເມວ</h3></label>
+          <input type="email" name="email" id="email" required placeholder="ກະລຸນາປ້ອນອີເມວ">
+        </div>
+
+        <div class="form-groups">
+          <label id="number-label"><h3>ອາຍຸ</h3></label>
+          <input type="number" id="number" name="age" min="10" max="99" placeholder="ອາຍຸ">
+        </div>
+
+        <div class="form-groups" id="gender">
+          <h3>ເພດ</h3>
+
+          <label>
+            <input type="radio" name="gender"  value="male">ຊາຍ</input>
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="female">ຍິງ</input>
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="other">ອື່ນໆ</input>
+          </label>
+
+        </div>
+
+        <div class="form-groups">
+          <h3>ຕອນນີ້ເຈົ້າເຮັດອາຊີບໃດຢູ່</h3>
+
+          <select id="dropdown">
+            <option disabled selected value>ເລືອກອາຊີບຂອງເຈົ້າ</option>
+            <option value="student">ນັກຮຽນ</option>
+            <option value="officer">ພະນັກງານປະຈຳ</option>
+            <option value="unemployed">ວ່າງງານ</option>
+            <option value="other">ອື່ນໆ</option>
+          </select>
+
+        </div>
+        <div class="form-groups" id="dream-job">
+
+          <h3>ອາຊີບທີ່ຢາກເຮັດ</h3>
+
+         <label><input
+            name="job"
+            value="front-end"
+            type="checkbox"
+            class="input-checkbox"
+          />Front-end Developer</label>
+          <br>
+
+         <label>
+            <input
+              name="job"
+              value="back-end"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Developer</label>
+          <br>
+
+          <label>
+            <input
+              name="job"
+              value="full-stack"
+              type="checkbox"
+              class="input-checkbox"
+            />Full Stack Developer</label>
+          <br>
+
+          <label>
+            <input
+              name="job"
+              value="graphic-design"
+              type="checkbox"
+              class="input-checkbox"
+            />Graphic Design</label>
+
+          <br>
+          <label>
+            <input
+              name="job"
+              value="cyber-security"
+              type="checkbox"
+              class="input-checkbox"
+            />Cyber Security</label>
+
+          <br>
+          <label>
+            <input
+              name="job"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label>
+
+        </div>
+
+        <div class="form-groups">
+          <h3>ມີຫຍັງຢາກບອກ ຫຼື ແນະນຳພວກເຮົາສາມາດບອກໄດ້</h3>
+
+          <textarea name="comment" id="comment" placeholder="ຂຽນບາງຢ່າງເພື່ອບອກພວກເຮົາ..."></textarea>
+
+        </div>
+
+        <div class="form-groups" id="btn">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
